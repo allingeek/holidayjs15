@@ -4,18 +4,24 @@
     </div>
 
     <div class="modal-body">
-        <h3>Player Name:</h3>
+        <h1>Player Name:</h1>
         <input type="text" class="form-control" ng-model="playerName">
 
-        <h3>Gift Title:</h3>
+        <h1>Gift Title:</h1>
         <input type="text" class="form-control" ng-model="giftName">
 
-        <h3>Gift URL:</h3>
+        <h1>Gift URL:</h1>
         <input type="text" class="form-control" ng-model="giftURL">
+
+        <!-- <h1>Gift URL:</h1> -->
+        <!-- <input type="text" class="form-control" ng-model="giftURL"> -->
+
+        <!-- <h1>Gift URL:</h1> -->
+        <!-- <input type="text" class="form-control" ng-model="giftURL"> -->
     </div>
 
     <div class="modal-footer">
-        <button class="btn btn-primary" type="button" ng-click="">Join Game</button>
+        <button class="btn btn-primary" type="button" ng-click="playerCtrl.createUser(playerName, giftName, giftURL)">Join Game</button>
         <!-- <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button> -->
     </div>
 </div>

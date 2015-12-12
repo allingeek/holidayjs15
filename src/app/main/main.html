@@ -4,7 +4,13 @@
     <acme-navbar creation-date="main.creationDate"></acme-navbar>
   </div>
 
-  <h1>Our Main View</h1>
+  <h1>Gifts</h1>
+  <div ng-repeat="gift in main.gifts">{{gift.name}}:{{gift.url}}</div>
+
+
+  <h1>Players</h1>
+  <div ng-repeat="player in main.players">{{player.name}}</div>
+
 
   <!-- <div class="jumbotron text-center">
     <h1>'Allo, 'Allo!</h1>
